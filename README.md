@@ -5,11 +5,6 @@
 
 מגישים: [רזניק ניקיטה]  |  commit מוגש: `[3a2e0cc61ff5ef086aa4a1f0ab28dd4c69de7344]`
 
-## הרצה ב-Google Colab (חובה)
-
-1. פתחו את `Milestone1_Agent_Colab.ipynb` ב-Colab: [Open in Colab](https://colab.research.google.com/github/<USER>/<REPO>/blob/main/Milestone1_Agent_Colab.ipynb)  (להחליף את `https://github.com/Nikvai/zchuti-milestone1`)
-2. בתא הראשון עדכנו את `REPO_URL` והריצו את כל התאים מהתחלה, בקולאב נקי.
-3. המחברת מבצעת `git clone`, `pip install -r requirements.txt`, מריצה את הבדיקות ואת ההדגמה.
 
 כברירת מחדל רץ **רכיב החלטה מדומה, בלי מפתח ובלי עלות**. רכיב עם מודל אמיתי נטען רק אם מוגדר `ANTHROPIC_API_KEY`
 (ב-Colab: Secrets). המפתח לעולם לא נכתב לקוד או למאגר.
