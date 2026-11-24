@@ -1,0 +1,36 @@
+{
+  "_comment": "SYNTHETIC DEMO DATA. All benefits, thresholds and amounts are made up for the course project.",
+  "benefits": [
+    {
+      "id": "student_transport",
+      "name": "הנחה בתחבורה ציבורית לסטודנטים",
+      "category": "transport",
+      "source": "rules.json (נתונים סינתטיים)",
+      "conditions": [
+        {"field": "age", "op": "<=", "value": 27},
+        {"field": "is_student", "op": "==", "value": true}
+      ]
+    },
+    {
+      "id": "arnona_discount",
+      "name": "הנחה בארנונה",
+      "category": "arnona",
+      "source": "rules.json (נתונים סינתטיים)",
+      "conditions": [
+        {"field": "is_student", "op": "==", "value": true},
+        {"field": "monthly_income", "op": "<=", "value": 5000}
+      ]
+    },
+    {
+      "id": "work_grant",
+      "name": "מענק עבודה",
+      "category": "work_grant",
+      "source": "rules.json (נתונים סינתטיים)",
+      "conditions": [
+        {"field": "employed", "op": "==", "value": true},
+        {"field": "age", "op": ">=", "value": 23},
+        {"field": "monthly_income", "op": "<=", "value": 4500}
+      ]
+    }
+  ]
+}

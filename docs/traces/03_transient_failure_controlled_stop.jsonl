@@ -1,0 +1,8 @@
+{"step": 1, "event": "user", "conversation_id": "demo", "text": "גיל 26, סטודנט, מועסק, הכנסה 4,000"}
+{"step": 2, "event": "decision", "round": 1, "decider": "mock", "action": {"kind": "update_profile", "fields": {"age": 26, "is_student": true, "employed": true, "monthly_income": 4000}}}
+{"step": 3, "event": "observation", "source": "update_profile", "ok": true, "changed": true, "profile": {"age": 26, "is_student": true, "employed": true, "monthly_income": 4000}}
+{"step": 4, "event": "decision", "round": 2, "decider": "mock", "action": {"kind": "tool", "name": "check_policy_rules", "args": {"category": "all"}}}
+{"step": 5, "event": "tool_call", "name": "check_policy_rules", "args": {"category": "all"}, "args_overridden_by_code": false}
+{"step": 6, "event": "tool_result", "name": "check_policy_rules", "result": {"ok": false, "error": {"code": "temporary_unavailable", "message": "המאגר אינו זמין זמנית", "retryable": true}, "attempts": 3}}
+{"step": 7, "event": "decision", "round": 3, "decider": "mock", "action": {"kind": "final", "text": "לא הצלחתי לגשת למאגר הכללים, נסה שוב מאוחר יותר."}}
+{"step": 8, "event": "stop", "reason": "tool_failure", "text": "לא הצלחתי לגשת למאגר הכללים, נסה שוב מאוחר יותר."}
